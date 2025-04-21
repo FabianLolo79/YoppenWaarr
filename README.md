@@ -2,11 +2,11 @@
 <h3>Nombre del Grupo: LONG HAIR GAMES</h3>
    <ul> 
        <p>Integrantes</p>
-       <li> Brian Schoepf <a></a></li>
+       <li> Brian Schoepf <a>https://github.com/BraSchoepf</a></li>
        <p>Lead Artis, Game Designer, Producer, Programmer</p>
-       <li> Esteban Barone <a></a></li>
+       <li> Esteban Barone <a>https://github.com/Esteban163</a></li>
        <p>Programmer,ArtistGame Design, Artis, Producer</p>
-       <li> Fabian García <a></a></li>
+       <li> Fabian García <a>https://github.com/FabianLolo79</a></li>
        <p>Producer, Programmer, Game Design, Artist</p>
   </ul>
 

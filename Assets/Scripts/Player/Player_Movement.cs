@@ -12,6 +12,7 @@ public class Player_Movement : MonoBehaviour
     private Animator _animator;
 
     private Vector2 _lastMoveDirection = Vector2.down; // Dirección inicial por defecto
+    private Vector2 _currentDirection;
 
     //Maquina de estados
     private Player_State_Machine _stateMachine; 
@@ -82,15 +83,14 @@ public class Player_Movement : MonoBehaviour
         // Leer input y asignar dirección
         float _move_X = Input.GetAxisRaw("Horizontal");
         float _move_Y = Input.GetAxisRaw("Vertical");
-        return new Vector2(_move_X, _move_Y).normalized;
+        _currentDirection = new Vector2(_move_X, _move_Y).normalized;
+        return _currentDirection;
     }
 
     public void ApplyMovement(Vector2 moveInput)
     {
-        // Actualizar dirección en el SO
-        _character_Data_SO.Direction = moveInput;
 
         // Aplicar movimiento basado en velocidad del SO
-        _rbPlayer.MovePosition(_rbPlayer.position + _character_Data_SO.Direction * _character_Data_SO.Speed * Time.fixedDeltaTime);
+        _rbPlayer.MovePosition(_rbPlayer.position + moveInput * _character_Data_SO.Speed * Time.fixedDeltaTime);
     }
 }
