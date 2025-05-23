@@ -6,7 +6,8 @@ public class FMODTester : MonoBehaviour
     void Start()
     {
         Debug.Log("Probando sonido...");
-        //RuntimeManager.PlayOneShot("event:/steps");
-        RuntimeManager.PlayOneShot("event:/life");
+        //RuntimeManager.PlayOneShot("event:/sfx-steps");
+        //RuntimeManager.PlayOneShot("event:/sfx-lowLife");
+        RuntimeManager.PlayOneShot("event:/music-scene_tutorial");
     }
 }

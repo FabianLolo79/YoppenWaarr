@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8861143702053095538
+--- !u!114 &-8945319156010900693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,22 +9,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/life/life
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/music-scene_tutorial.bank
   m_EditorClassIdentifier: 
-  Name: life
-  StudioPath: 
-  Min: 0
-  Max: 60
-  Default: 0
-  ID:
-    data1: 530750774
-    data2: 3249661645
-  Type: 0
-  IsGlobal: 0
-  Labels: []
+  Path: ../../../B-TECNICATURA_2024/TecUniverEnDesarrolloYProduccionDeVideojuegos-UPC/2-Cuatrimestre/LongHairGame/Music/FMOD/ProyectoYoppenWaarr/YoppenWaarr/Build/Desktop/music-scene_tutorial.bank
+  Name: music-scene_tutorial
+  StudioPath: bank:/music-scene_tutorial
+  lastModified: 638835946137671806
+  FileSizes:
+  - Name: Desktop
+    Value: 2808064
   Exists: 1
---- !u!114 &-3561557508188415616
+--- !u!114 &-7439959661289522434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/sfx-scene_tutorial.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../B-TECNICATURA_2024/TecUniverEnDesarrolloYProduccionDeVideojuegos-UPC/2-Cuatrimestre/LongHairGame/Music/FMOD/ProyectoYoppenWaarr/YoppenWaarr/Build/Desktop/sfx-scene_tutorial.bank
+  Name: sfx-scene_tutorial
+  StudioPath: bank:/sfx-scene_tutorial
+  lastModified: 638836091530565193
+  FileSizes:
+  - Name: Desktop
+    Value: 402656
+  Exists: 1
+--- !u!114 &-6551209761847743146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34,53 +50,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/steps
+  m_Name: event:/sfx-farm_3D
   m_EditorClassIdentifier: 
-  Path: event:/steps
+  Path: event:/sfx-farm_3D
   Guid:
-    Data1: 1996149906
-    Data2: 1149949086
-    Data3: 1282454148
-    Data4: 297059509
+    Data1: 926096164
+    Data2: 1130740221
+    Data3: -783881052
+    Data4: 2047532821
   Banks:
-  - {fileID: 8546666456936888796}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 1742452844371117540}
+  - {fileID: -7439959661289522434}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 550
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 5246239391447500679}
-  - {fileID: 8546666456936888796}
-  EditorEvents:
-  - {fileID: -3561557508188415616}
-  - {fileID: 8354943571377448978}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 8546666456936888796}
-  StringsBanks:
-  - {fileID: 5246239391447500679}
-  cacheVersion: 131847
-  cacheTime: 638834294296750157
-  SerializableEventsDict:
-  - key: event:/steps
-    index: 0
---- !u!114 &1742452844371117540
+  Length: 16920
+--- !u!114 &-5674109611179656827
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -90,7 +77,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/steps/Material
+  m_Name: parameter:/sfx-steps/Material
   m_EditorClassIdentifier: 
   Name: Material
   StudioPath: 
@@ -106,6 +93,280 @@ MonoBehaviour:
   - sand
   - wood
   Exists: 1
+--- !u!114 &-4850756904964048908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music-scene_tutorial
+  m_EditorClassIdentifier: 
+  Path: event:/music-scene_tutorial
+  Guid:
+    Data1: -209523052
+    Data2: 1183512563
+    Data3: 1576101802
+    Data4: 987461155
+  Banks:
+  - {fileID: -8945319156010900693}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 70000
+--- !u!114 &-1166519298525584549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/sfx-menu.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../B-TECNICATURA_2024/TecUniverEnDesarrolloYProduccionDeVideojuegos-UPC/2-Cuatrimestre/LongHairGame/Music/FMOD/ProyectoYoppenWaarr/YoppenWaarr/Build/Desktop/sfx-menu.bank
+  Name: sfx-menu
+  StudioPath: bank:/sfx-menu
+  lastModified: 638836066109139742
+  FileSizes:
+  - Name: Desktop
+    Value: 21120
+  Exists: 1
+--- !u!114 &-523894588258380744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx-btn_echalePata
+  m_EditorClassIdentifier: 
+  Path: event:/sfx-btn_echalePata
+  Guid:
+    Data1: 1660034841
+    Data2: 1154393571
+    Data3: 1638317699
+    Data4: 1739459604
+  Banks:
+  - {fileID: -1166519298525584549}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1358
+--- !u!114 &-482863392249618703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music-intro_game
+  m_EditorClassIdentifier: 
+  Path: event:/music-intro_game
+  Guid:
+    Data1: 1545603580
+    Data2: 1266628652
+    Data3: 1635604117
+    Data4: -583249529
+  Banks:
+  - {fileID: 8822859073358400113}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 78483
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 5246239391447500679}
+  - {fileID: 8546666456936888796}
+  - {fileID: 8822859073358400113}
+  - {fileID: -8945319156010900693}
+  - {fileID: -1166519298525584549}
+  - {fileID: -7439959661289522434}
+  EditorEvents:
+  - {fileID: 3149142195775758245}
+  - {fileID: 5655921209219483545}
+  - {fileID: 8113183042499947166}
+  - {fileID: -482863392249618703}
+  - {fileID: -4850756904964048908}
+  - {fileID: -523894588258380744}
+  - {fileID: 8266896051259116965}
+  - {fileID: 4660105469320714732}
+  - {fileID: 5173547088758941293}
+  - {fileID: 8035463746905794289}
+  - {fileID: -6551209761847743146}
+  - {fileID: 3166989337230296206}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 8546666456936888796}
+  StringsBanks:
+  - {fileID: 5246239391447500679}
+  cacheVersion: 131847
+  cacheTime: 638836091530565193
+  SerializableEventsDict:
+  - key: event:/music-menu
+    index: 0
+  - key: event:/music-menu_fogon
+    index: 1
+  - key: event:/music-menu_pause
+    index: 2
+  - key: event:/music-intro_game
+    index: 3
+  - key: event:/music-scene_tutorial
+    index: 4
+  - key: event:/sfx-btn_echalePata
+    index: 5
+  - key: event:/sfx-btn-hover
+    index: 6
+  - key: event:/sfx-dogBark
+    index: 7
+  - key: event:/sfx-lowLife
+    index: 8
+  - key: event:/sfx-steps
+    index: 9
+  - key: event:/sfx-powerUp
+    index: 10
+  - key: event:/sfx-farm
+    index: 11
+--- !u!114 &3149142195775758245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music-menu
+  m_EditorClassIdentifier: 
+  Path: event:/music-menu
+  Guid:
+    Data1: 1993078038
+    Data2: 1145018934
+    Data3: -1697985126
+    Data4: 579324948
+  Banks:
+  - {fileID: 8822859073358400113}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 142680
+--- !u!114 &3166989337230296206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx-dogBark_3D
+  m_EditorClassIdentifier: 
+  Path: event:/sfx-dogBark_3D
+  Guid:
+    Data1: -1467003659
+    Data2: 1197652856
+    Data3: -1107850085
+    Data4: 6162293
+  Banks:
+  - {fileID: -7439959661289522434}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6264
+--- !u!114 &4660105469320714732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx-lowLife
+  m_EditorClassIdentifier: 
+  Path: event:/sfx-lowLife
+  Guid:
+    Data1: -1752153839
+    Data2: 1281295997
+    Data3: -276501078
+    Data4: 1115519290
+  Banks:
+  - {fileID: -7439959661289522434}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4363
+--- !u!114 &5173547088758941293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx-steps
+  m_EditorClassIdentifier: 
+  Path: event:/sfx-steps
+  Guid:
+    Data1: 1996149906
+    Data2: 1149949086
+    Data3: 1282454148
+    Data4: 297059509
+  Banks:
+  - {fileID: -7439959661289522434}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5674109611179656827}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 550
 --- !u!114 &5246239391447500679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,12 +382,12 @@ MonoBehaviour:
   Path: ../../../B-TECNICATURA_2024/TecUniverEnDesarrolloYProduccionDeVideojuegos-UPC/2-Cuatrimestre/LongHairGame/Music/FMOD/ProyectoYoppenWaarr/YoppenWaarr/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638834294296750157
+  lastModified: 638836091527202813
   FileSizes:
   - Name: Desktop
-    Value: 910
+    Value: 1546
   Exists: 1
---- !u!114 &8354943571377448978
+--- !u!114 &5655921209219483545
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,24 +397,104 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/life
+  m_Name: event:/music-menu_fogon
   m_EditorClassIdentifier: 
-  Path: event:/life
+  Path: event:/music-menu_fogon
   Guid:
-    Data1: -1752153839
-    Data2: 1281295997
-    Data3: -276501078
-    Data4: 1115519290
+    Data1: -955412403
+    Data2: 1278793599
+    Data3: -1877592133
+    Data4: 165090564
   Banks:
-  - {fileID: 8546666456936888796}
+  - {fileID: 8822859073358400113}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 101601
+--- !u!114 &8035463746905794289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx-powerUp
+  m_EditorClassIdentifier: 
+  Path: event:/sfx-powerUp
+  Guid:
+    Data1: -2025685317
+    Data2: 1256596361
+    Data3: 861056385
+    Data4: 1130938481
+  Banks:
+  - {fileID: -7439959661289522434}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters:
-  - {fileID: -8861143702053095538}
+  Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 16000
+  Length: 1400
+--- !u!114 &8113183042499947166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/music-menu_pause
+  m_EditorClassIdentifier: 
+  Path: event:/music-menu_pause
+  Guid:
+    Data1: -1308638884
+    Data2: 1075437574
+    Data3: -1735282503
+    Data4: 1340306473
+  Banks:
+  - {fileID: 8822859073358400113}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 101825
+--- !u!114 &8266896051259116965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/sfx-btn-hover
+  m_EditorClassIdentifier: 
+  Path: event:/sfx-btn-hover
+  Guid:
+    Data1: -36230301
+    Data2: 1267514612
+    Data3: -1614706018
+    Data4: -2039109526
+  Banks:
+  - {fileID: -1166519298525584549}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
 --- !u!114 &8546666456936888796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,8 +510,28 @@ MonoBehaviour:
   Path: ../../../B-TECNICATURA_2024/TecUniverEnDesarrolloYProduccionDeVideojuegos-UPC/2-Cuatrimestre/LongHairGame/Music/FMOD/ProyectoYoppenWaarr/YoppenWaarr/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638834294296730183
+  lastModified: 638836091527182825
   FileSizes:
   - Name: Desktop
-    Value: 68160
+    Value: 1074
+  Exists: 1
+--- !u!114 &8822859073358400113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/music-menu.bank
+  m_EditorClassIdentifier: 
+  Path: ../../../B-TECNICATURA_2024/TecUniverEnDesarrolloYProduccionDeVideojuegos-UPC/2-Cuatrimestre/LongHairGame/Music/FMOD/ProyectoYoppenWaarr/YoppenWaarr/Build/Desktop/music-menu.bank
+  Name: music-menu
+  StudioPath: bank:/music-menu
+  lastModified: 638836066107820499
+  FileSizes:
+  - Name: Desktop
+    Value: 5766048
   Exists: 1

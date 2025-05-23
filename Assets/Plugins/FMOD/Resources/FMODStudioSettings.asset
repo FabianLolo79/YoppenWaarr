@@ -623,7 +623,11 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks: []
+  Banks:
+  - music-menu
+  - music-scene_tutorial
+  - sfx-menu
+  - sfx-scene_tutorial
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

@@ -81,6 +81,5 @@ crashlytics-build.properties
 Cache/
 Build/
 Assets/Plugins/FMOD/Cache/
-StreamingAssets/FMOD/Desktop/*.bank
-StreamingAssets/FMOD/Desktop/*.strings.bank
+
 
