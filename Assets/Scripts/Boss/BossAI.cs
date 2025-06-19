@@ -25,7 +25,6 @@ public class BossAI : MonoBehaviour
     void Start()
     {
         Animator = GetComponent<Animator>();
-        bossManager = BossManager.Instance;
         currentState = new IdleState(this);
         currentState.Enter();
     }
@@ -112,5 +111,16 @@ public class BossAI : MonoBehaviour
         }
 
     }
+
+    public void EnableDamage()
+    {
+        BossManager.Instance?.EnableDamage();
+    }
+
+    public void DisableDamage()
+    {
+        BossManager.Instance?.DisableDamage();
+    }
+
 }
 

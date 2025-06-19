@@ -15,9 +15,11 @@ public class MoveState : BossState
 
     public override void Update()
     {
-        boss.MoveTowardsPlayer();
-
-        if (boss.InAttackRange())
+        if (!boss.InAttackRange())
+        {
+            boss.MoveTowardsPlayer();
+        }
+        else
         {
             boss.ChangeState(new AttackState(boss));
         }
