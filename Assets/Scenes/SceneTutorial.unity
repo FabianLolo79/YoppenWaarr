@@ -121805,7 +121805,7 @@ Transform:
   m_GameObject: {fileID: 271638218}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -65.1, y: -69.7, z: -40}
+  m_LocalPosition: {x: -43.1, y: -158.2, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -238938,7 +238938,8 @@ GameObject:
   - component: {fileID: 533108929}
   - component: {fileID: 533108934}
   - component: {fileID: 533108933}
-  m_Layer: 0
+  - component: {fileID: 533108935}
+  m_Layer: 6
   m_Name: Xalpen-Boss
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -239053,7 +239054,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: -2784853098784865754, guid: 0baa8fbd5cdf0114989bd1fbcbbcc7fb, type: 3}
   m_Color: {r: 0.8396226, g: 0.13861692, b: 0.5341477, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -239076,7 +239077,8 @@ Transform:
   m_LocalPosition: {x: -22.95, y: -172.96, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1074904686}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &533108933
@@ -239117,8 +239119,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad17cd07c25817940a44f8400eb48316, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadMovimiento: 5
-  distanciaMinima: 5
+  Animator: {fileID: 0}
+  velocidadMovimiento: 20
+  distanciaMinima: 2
+  radiusAttack: 4.26
+  pointAttack: {fileID: 1074904686}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  MeleeDamage: 20
+--- !u!95 &533108935
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 533108928}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5154f4d3eeebb4947bd110abd33e175f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &537864193
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -242859,6 +242890,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070981505}
   m_CullTransparentMesh: 1
+--- !u!1 &1074904685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1074904686}
+  m_Layer: 0
+  m_Name: pointAttack
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1074904686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1074904685}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 533108932}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1077798717
 GameObject:
   m_ObjectHideFlags: 0
@@ -252019,7 +252081,7 @@ Transform:
   m_GameObject: {fileID: 1934014352}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -65.1, y: -69.7, z: -40}
+  m_LocalPosition: {x: -43.1, y: -158.2, z: -40}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -369293,11 +369355,11 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 89f09b0475fb9e24f950e3bb29cabf50, type: 2}
     - target: {fileID: 5736752747395707012, guid: e5551d3f754482445aeed23f81597183, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -65.1
+      value: -43.1
       objectReference: {fileID: 0}
     - target: {fileID: 5736752747395707012, guid: e5551d3f754482445aeed23f81597183, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -69.7
+      value: -158.2
       objectReference: {fileID: 0}
     - target: {fileID: 5736752747395707012, guid: e5551d3f754482445aeed23f81597183, type: 3}
       propertyPath: m_LocalPosition.z

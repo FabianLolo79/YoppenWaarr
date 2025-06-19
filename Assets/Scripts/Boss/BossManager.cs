@@ -20,7 +20,10 @@ public class BossManager : MonoBehaviour
     public float knockbackForce = 5f;
     public float knockbackDuration = 0.15f;
     private NavMeshAgent navAgent;
+
     private bool bossActivado = false;
+    public bool esInvulnerable = false;
+
 
     [Header("FMOD")]
     [SerializeField] private EventReference damageSFX;
@@ -33,9 +36,11 @@ public class BossManager : MonoBehaviour
 
     private void Start()
     {
+
         vidaActual = vidaMaxima;
         navAgent = GetComponent<NavMeshAgent>();
         ActualizarBarra();
+        ActivarBoss();
     }
 
     // Reducido por eliminación de grupos
@@ -58,7 +63,7 @@ public class BossManager : MonoBehaviour
     // Daño directo (espada, proyectil)
     public void RecibirDaño(int cantidad, Vector2 knockbackDir)
     {
-        if (vidaActual <= 0) return;
+        if (vidaActual <= 0 || esInvulnerable) return;
 
         StartCoroutine(FlashDamage());
         SpawnDamageParticles();
@@ -69,10 +74,10 @@ public class BossManager : MonoBehaviour
         vidaActual = Mathf.Max(vidaActual - cantidad, 0);
         ActualizarBarra();
 
-        if (!bossActivado && vidaActual <= vidaMaxima / 2)
+        /*if (!bossActivado && vidaActual <= vidaMaxima / 2)
         {
             ActivarBoss();
-        }
+        }*/
 
         if (vidaActual <= 0)
         {
@@ -83,7 +88,7 @@ public class BossManager : MonoBehaviour
     private void ActivarBoss()
     {
         bossActivado = true;
-        bossAI?.ActivarAtaque();
+        bossAI?.MoveTowardsPlayer();
         Debug.Log("¡Boss activado!");
     }
 
